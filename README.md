@@ -12,3 +12,6 @@
 - [tpm](https://github.com/tmux-plugins/tpm)
 - [asdf](https://github.com/asdf-vm/asdf)
 - [direnv](https://github.com/direnv/direnv)
+- [delta](https://github.com/dandavison/delta)
+- [git-lfs](https://github.com/git-lfs/git-lfs)
+- [fzf](https://github.com/junegunn/fzf)
