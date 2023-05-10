@@ -17,4 +17,5 @@
 - [git-lfs](https://github.com/git-lfs/git-lfs)
 - [fzf](https://github.com/junegunn/fzf)
 - a C compiler (`sudo apt-get install build-essential`)
+- python3-venv
 - neovim
