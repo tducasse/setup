@@ -19,4 +19,5 @@
 - a C compiler (`sudo apt-get install build-essential`)
 - python3-venv
 - unzip
+- [ripgrep](https://github.com/BurntSushi/ripgrep)
 - neovim
