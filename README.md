@@ -18,4 +18,5 @@
 - [fzf](https://github.com/junegunn/fzf)
 - a C compiler (`sudo apt-get install build-essential`)
 - python3-venv
+- unzip
 - neovim
