@@ -43,6 +43,7 @@ require("nvim-treesitter.configs").setup({
 		"yaml",
 		"markdown",
 		"markdown_inline",
+		"go",
 	},
 })
 
@@ -71,6 +72,7 @@ lsp.ensure_installed({
 	"lua_ls",
 	"rust_analyzer",
 	"jedi_language_server",
+	"gopls",
 })
 lsp.nvim_workspace()
 lsp.set_preferences({
@@ -120,6 +122,7 @@ require("mason-tool-installer").setup({
 		"stylua",
 		"flake8",
 		"isort",
+		"goimports",
 	},
 })
 
@@ -134,6 +137,7 @@ null_ls.setup({
 		}),
 		null_ls.builtins.formatting.isort,
 		null_ls.builtins.diagnostics.flake8,
+		null_ls.builtins.formatting.goimports,
 	},
 	on_attach = function(client, bufnr)
 		if client.supports_method("textDocument/formatting") then
