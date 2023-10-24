@@ -32,6 +32,9 @@ return require("packer").startup(function(use)
 	-- theme
 	use("sainnhe/sonokai")
 
+	-- buffer tabs
+	use({ "akinsho/bufferline.nvim", tag = "*", requires = "nvim-tree/nvim-web-devicons" })
+
 	-- syntax highlighting
 	use({
 		"nvim-treesitter/nvim-treesitter",
@@ -39,9 +42,6 @@ return require("packer").startup(function(use)
 			require("nvim-treesitter.install").update({ with_sync = true })
 		end,
 	})
-
-	-- buffer tabs
-	use({ "akinsho/bufferline.nvim", tag = "v3.*", requires = "kyazdani42/nvim-web-devicons" })
 
 	-- file explorer
 	use({ "nvim-tree/nvim-tree.lua", requires = { "nvim-tree/nvim-web-devicons" } })
@@ -54,7 +54,6 @@ return require("packer").startup(function(use)
 	})
 
 	-- git
-
 	use("tpope/vim-fugitive")
 
 	-- comments with gcc
@@ -80,9 +79,7 @@ return require("packer").startup(function(use)
 	use({
 		"VonHeikemen/lsp-zero.nvim",
 		requires = {
-
 			-- LSP Support
-
 			{ "neovim/nvim-lspconfig" },
 			{ "williamboman/mason.nvim" },
 			{ "williamboman/mason-lspconfig.nvim" },
@@ -91,7 +88,6 @@ return require("packer").startup(function(use)
 			{ "hrsh7th/nvim-cmp" },
 			{ "hrsh7th/cmp-buffer" },
 			{ "hrsh7th/cmp-path" },
-
 			{ "saadparwaiz1/cmp_luasnip" },
 			{ "hrsh7th/cmp-nvim-lsp" },
 			{ "hrsh7th/cmp-nvim-lua" },
@@ -103,20 +99,13 @@ return require("packer").startup(function(use)
 	})
 
 	-- lsp saga
-
 	use({
 		"glepnir/lspsaga.nvim",
 		branch = "main",
 	})
 
-	-- formatting and linting
-
-	use({
-		"jose-elias-alvarez/null-ls.nvim",
-		requires = {
-			{ "nvim-lua/plenary.nvim" },
-		},
-	})
+	-- formatter
+	use({ "mhartington/formatter.nvim" })
 
 	-- ensure_installed for Mason
 	use("WhoIsSethDaniel/mason-tool-installer.nvim")
