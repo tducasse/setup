@@ -21,6 +21,9 @@ vim.keymap.set("n", "<leader>ff", builtin.find_files, {})
 vim.keymap.set("n", "<leader>fg", builtin.live_grep, {})
 vim.keymap.set("n", "<leader>fb", builtin.buffers, {})
 
+-- SPECTRE
+vim.keymap.set("n", "<leader>sr", ":lua require('spectre').open()<CR>", { silent = true })
+
 -- TREESITTER
 require("nvim-treesitter.configs").setup({
 	highlight = {
