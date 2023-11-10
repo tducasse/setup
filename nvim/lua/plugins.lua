@@ -29,6 +29,9 @@ return require("packer").startup(function(use)
 		},
 	})
 
+	-- search and replace
+	use("nvim-pack/nvim-spectre")
+
 	-- theme
 	use("sainnhe/sonokai")
 
