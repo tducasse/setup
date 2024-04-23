@@ -19,7 +19,7 @@ return require("packer").startup(function(use)
 	-- fuzzy search
 	use({
 		"nvim-telescope/telescope.nvim",
-		tag = "0.1.0",
+		tag = "0.1.5",
 		requires = {
 			{ "nvim-lua/plenary.nvim" },
 			{
@@ -52,8 +52,7 @@ return require("packer").startup(function(use)
 	-- status line
 	use({
 		"nvim-lualine/lualine.nvim",
-
-		requires = { "kyazdani42/nvim-web-devicons", opt = true },
+		requires = { "nvim-tree/nvim-web-devicons", opt = true },
 	})
 
 	-- git
