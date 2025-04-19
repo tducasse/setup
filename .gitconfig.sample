@@ -4,7 +4,8 @@
 	name = NAME
 	email = EMAIL
 [core]
-	pager = delta
+  pager = delta
+  excludesfile = ~/.gitignore_global
 [delta]
 	plus-color = "#012800"
 	minus-color = "#340001"
@@ -13,10 +14,27 @@
 	navigate = true
 [interactive]
 	diffFilter = delta --color-only
-[filter "lfs"]
-	clean = git-lfs clean -- %f
-	smudge = git-lfs smudge -- %f
-	process = git-lfs filter-process
-	required = true
 [pull]
 	rebase = true
+[column]
+	ui = auto
+[branch]
+	sort = -committerdate
+[tag]
+	sort = version:refname
+[diff]
+	algorithm = histogram
+	colorMoved = plain
+	mnemonicPrefix = true
+	renames = true
+[push]
+	default = simple
+	autoSetupRemote = true
+	followTags = true
+[fetch]
+	prune = true
+[help]
+	autocorrect = prompt
+[rerere]
+	enabled = true
+	autoupdate = true
